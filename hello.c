@@ -1,13 +1,16 @@
-#include <stdio.h>
+ #include <stdio.h>
  int main()
-{
- char name [100];
- printf("\nenter your name :");
- scanf("%99s",name);
- printf("\nhello %s",name);
- int age;
- printf("\nenter your age:");
- scanf("%d",&age);
- printf("you are %d years old.",age);
- return 0;
+ {
+    int number;
+    printf("enter the number: ");
+    scanf("%d",&number);
+    if (number % 2 == 0)
+    {
+    printf("even");
+    }
+    else
+    {
+      printf("odd");
+    }
+    return 0;
 }
