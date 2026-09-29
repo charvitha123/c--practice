@@ -1,16 +1,15 @@
- #include <stdio.h>
- int main()
- {
-    int number;
-    printf("enter the number: ");
-    scanf("%d",&number);
-    if (number % 2 == 0)
-    {
-    printf("even");
-    }
+#include <stdio.h>
+int main ()
+{
+    int n;
+    printf("enter n value :");
+    scanf("%d",&n);
+    if(n > 0)
+    printf("positive");
+    else if(n==0)
+    printf("zero");
     else
-    {
-      printf("odd");
-    }
+    printf("negative");
+    
     return 0;
 }
