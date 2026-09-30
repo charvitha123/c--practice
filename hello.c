@@ -1,15 +1,13 @@
 #include <stdio.h>
 int main ()
 {
-    int n;
-    printf("enter n value :");
-    scanf("%d",&n);
-    if(n > 0)
-    printf("positive");
-    else if(n==0)
-    printf("zero");
+    int age;
+    printf("enter your age:");
+    scanf("%d",&age);
+    if (age>=18)
+    printf("eligible to vote");
     else
-    printf("negative");
-    
+    printf("not eligible");
+
     return 0;
 }
