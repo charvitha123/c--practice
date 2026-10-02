@@ -1,13 +1,12 @@
-#include <stdio.h>
-int main ()
+ #include<stdio.h>
+int main()
 {
-    int age;
-    printf("enter your age:");
-    scanf("%d",&age);
-    if (age>=18)
-    printf("eligible to vote");
-    else
-    printf("not eligible");
-
-    return 0;
+	int year;
+	printf("enter year:");
+	scanf("%d",&year);
+	if(year%400==0||year%4==0&&year%100!=0)
+	printf("it's leap year");
+	else
+	printf("non leap year");
+	return 0;
 }
